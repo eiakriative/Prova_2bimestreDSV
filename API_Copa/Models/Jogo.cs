@@ -13,6 +13,8 @@ namespace API_Copa.Models
         public int Id { get; set; }
         public Selecao SelecaoA { get; set; }
         public Selecao SelecaoB { get; set; }
+        public int SelecaoAPlacar{get;set;}
+        public int SelecaoBPlacar{get;set;}
         public DateTime CriadoEm { get; set; }
     }
 }

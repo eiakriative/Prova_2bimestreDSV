@@ -4,6 +4,7 @@ using api.Models;
 using API_Copa.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace api.Controllers
 {
@@ -12,8 +13,11 @@ namespace api.Controllers
     public class JogoController : ControllerBase
     {
         private readonly Context _context;
-        public JogoController(Context context) =>
+
+        public JogoController(Context context) {
             _context = context;
+        }
+            
 
         [HttpPost]
         [Route("cadastrar")]
